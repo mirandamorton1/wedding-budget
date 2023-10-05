@@ -1,6 +1,8 @@
 const Header = () => {
   return (
-    <div>Wedding Budget</div>
+    <div className='container'>
+        <h1 className='mt-2'>Wedding Budget</h1>
+    </div>
   )
 }
 

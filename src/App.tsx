@@ -1,26 +1,42 @@
-import Header from './components/Header'
-import Budget from './components/Budget'
-import VendorList from './components/VendorList'
-import Footer from './components/Footer'
-import AddVendor from './components/AddVendor'
-import RemainingBudget from './components/RemainingBudget'
-import AmountPaid from './components/AmountPaid'
-import AmountLeft from './components/AmountLeft'
-import './App.css'
+import Header from "./components/Header";
+import Budget from "./components/Budget";
+import AddVendor from "./components/AddVendor";
+import RemainingBudget from "./components/RemainingBudget";
+import "./App.css";
+import { AppProvider } from "./context/AppContext";
+import "bootstrap/dist/css/bootstrap.css";
+import VendorTable from "./components/VendorTable";
 
 function App() {
   return (
     <>
-    <Header />
-    <Budget />
-    <RemainingBudget />
-    <VendorList />
-    <AmountPaid />
-    <AmountLeft />
-    <AddVendor />
-    <Footer />
+      <AppProvider>
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-8">
+              <Header />
+            </div>
+            <div className="col-md-4 col-12">
+              <div className="inner-wrapper">
+                <Budget />
+                <RemainingBudget />
+              </div>
+            </div>
+          </div>
+          <div className="row mt-3">
+            <div className="col-sm mt-2">
+              <VendorTable />
+            </div>
+          </div>
+          <div className="mt-3">
+            <div className="col-sm">
+              <AddVendor />
+            </div>
+          </div>
+        </div>
+      </AppProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
