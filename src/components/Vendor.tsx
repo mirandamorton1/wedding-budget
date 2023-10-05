@@ -1,5 +1,5 @@
-import { MdDelete, MdOutlineDeleteOutline } from 'react-icons/md';
-import { AiFillEdit, AiOutlineEdit } from 'react-icons/ai';
+import { MdOutlineDeleteOutline } from 'react-icons/md';
+import { AiOutlineEdit } from 'react-icons/ai';
 import { useContext } from 'react';
 import { AppContext, AppContextType } from '../context/AppContext';
 

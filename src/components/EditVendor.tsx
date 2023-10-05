@@ -14,7 +14,6 @@ interface EditVendorProps {
 }
 
 const EditVendor: React.FC<EditVendorProps> = ({
-  vendor,
   handleSaveVendor,
 }) => {
 

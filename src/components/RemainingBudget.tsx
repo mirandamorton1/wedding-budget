@@ -7,8 +7,6 @@ const RemainingBudget = () => {
     (total, item) => (total = total + item.cost),
     0
   );
-  const alertType =
-    totalVendorExpenses > budget ? "alert-danger" : "alert-success";
   const spentPercentage = (totalVendorExpenses / budget) * 100;
 
   return (
