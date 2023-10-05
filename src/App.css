@@ -50,11 +50,14 @@
   align-items:center;
   color:#dc8990;
 
-
 }
 
 .table {
   font-family: 'Poppins', sans-serif;
+}
+
+svg {
+  cursor: pointer;
 }
 
 .new {
