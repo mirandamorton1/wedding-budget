@@ -24,6 +24,8 @@
   border: 1px solid #99b89a;
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .progress-text {
@@ -56,10 +58,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-svg {
-  cursor: pointer;
-}
-
 .new {
   font-family: 'Poppins', sans-serif;
 }
@@ -79,17 +77,10 @@ svg {
 }
 
 
-#saveBtn {
-  background: #99b89a;
-  border:#99b89a;
-  font-family: 'Poppins', sans-serif;
-
-}
-
-#saveBtn2 {
-  background: #99b89a;
-  border:#99b89a;
-  font-family: 'Poppins', sans-serif;
+.btn {
+  background: #99b89a !important;
+  border:#99b89a !important;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .editBudgetBtn {

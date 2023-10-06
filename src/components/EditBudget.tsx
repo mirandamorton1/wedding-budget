@@ -22,7 +22,7 @@ const EditBudget: React.FC<EditBudgetProps> = ({ budget, handleSaveClick }) => {
 			/>
 			<br></br>
 			<button
-				type='button' id="saveBtn2"
+				type='button'
 				className='btn btn-primary'
 				onClick={() => handleSaveClick(value)}
 			>

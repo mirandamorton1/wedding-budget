@@ -117,7 +117,7 @@ const AddVendor = () => {
           </div>
         </div>
         <div className="col-sm mt-3">
-          <button type="submit" id="saveBtn" className="btn btn-success">
+          <button type="submit" className="btn btn-success">
             Save
           </button>
         </div>

@@ -13,13 +13,15 @@ const RemainingBudget = () => {
     <>
       <div
         className="progressBar"
-        style={{ border: "1px solid #99b89a", height: "20px", background: "white" }}
+        style={{ border: spentPercentage >= 100 ? "none" : "1px solid #99b89a", height: "20px", background: "white", width: `${budget}` }}
       >
         <div className="progressBarFill"
           style={{
             width: `${spentPercentage}%`,
+            maxWidth: `${budget}%`,
             height: "20px",
-            backgroundColor: "#99b89a",
+            backgroundColor: spentPercentage >= 100 ? "red" : "#99b89a",
+
           }}
         ></div>
         <div className="progress-text">

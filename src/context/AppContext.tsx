@@ -6,7 +6,7 @@ interface Vendor {
     name: string;
     cost: number;
     paid: number;
-    dueDate: number;
+    dueDate: string;
   }
 
 
@@ -20,7 +20,7 @@ type Action = {
     payload?: any
 }
 
-const AppReducer = (state: State, action: Action) => {
+export const AppReducer = (state: State, action: Action) => {
     switch(action.type) {
         case 'add_vendor':
             return {
@@ -33,6 +33,16 @@ const AppReducer = (state: State, action: Action) => {
                     vendors: state.vendors.filter((vendor) => vendor.id !== action.payload
                     ),
                 };
+                case 'update_vendor':
+                    const updatedVendors = state.vendors.map((vendor) => 
+                      vendor.id === action.payload.id ? action.payload : vendor
+                    );
+                    // Save the updated vendors to local storage
+                    localStorage.setItem('vendors', JSON.stringify(updatedVendors));
+                    return {
+                        ...state,
+                        vendors: updatedVendors,
+                    };
                 case 'save_budget':
                     return {
                         ...state,
@@ -45,9 +55,9 @@ const AppReducer = (state: State, action: Action) => {
 const initialState = {
     budget: 100,
     vendors: [
-        {id: 12, name: 'Drinks', cost: 10, paid: 5, difference: 5, dueDate: '10/25/2025' },
-        {id: 13, name: 'Dessert', cost: 5, paid: 5, difference: 0, dueDate: '10/25/2025' },
-        {id: 14, name: 'DJ', cost: 15, paid: 10, difference: 5, dueDate: '10/25/2025' },
+        // {id: 12, name: 'Drinks', cost: 10, paid: 5, difference: 5, dueDate: '10/25/2025' },
+        // {id: 13, name: 'Dessert', cost: 5, paid: 5, difference: 0, dueDate: '10/25/2025' },
+        // {id: 14, name: 'DJ', cost: 15, paid: 10, difference: 5, dueDate: '10/25/2025' },
     ]
 };
 

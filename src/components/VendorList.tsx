@@ -7,7 +7,7 @@ interface VendorProps {
   name: string;
   cost: number;
   paid: number;
-  dueDate: number;
+  dueDate: string;
   dispatch: React.Dispatch<Dispatch>;
 }
 

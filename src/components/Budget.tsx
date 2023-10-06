@@ -7,7 +7,7 @@ import ViewBudget from "./ViewBudget"
 
 interface Dispatch {
   type: string;
-  payload?: any;
+  payload?: number;
 }
 
 const Budget = () => {
@@ -15,7 +15,7 @@ const Budget = () => {
   
   const { budget } = useContext(AppContext) as { budget: number }
 
-  const [isEditing, setIsEditing] =useState<boolean>(false)
+  const [isEditing, setIsEditing] =useState(false)
 
   const handleEditClick = () => {
     setIsEditing(true)
