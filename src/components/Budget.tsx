@@ -33,7 +33,7 @@ const Budget = () => {
 
   return (
     <>
-		<div>
+		<div data-testid="budget-1">
 			{isEditing ? (
 				<EditBudget handleSaveClick={handleSaveClick} budget={budget} />
 			) : (
