@@ -8,7 +8,7 @@ This is an easy to use wedding budget app that lets you set your budget, add wed
 
 ### You can watch a walk-through of this app here
 
-https://watch.screencastify.com/v/MUhTzPmMSm9mxDgtdXsX
+https://drive.google.com/file/d/10-0JGmZ5Y5zOtBjls2uZw-vLPFhh1OTD/view
 
 <img width="1403" alt="Screenshot 2023-10-08 at 8 38 42 PM" src="https://github.com/mirandamorton1/wedding-budget/assets/107001559/ff6df69d-6b44-432c-aff8-874e4b9f054b">
 
